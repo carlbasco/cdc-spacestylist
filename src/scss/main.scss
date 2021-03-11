@@ -39,7 +39,7 @@ section {
 .scrollTop {
   position: fixed;
   top: 50%;
-  right: -110px;
+  right: -20px;
   z-index: 99;
   border: none;
   outline: none;
@@ -51,10 +51,6 @@ section {
   font-size: 18px;
   padding: 8px 1.5em 8px 1em;
   transition: right 0.5s ease-in-out;
-  &:hover {
-    right: -20px;
-    transition: right 0.5s ease-in-out;
-  }
 }
 
 .hide-scrollTop {

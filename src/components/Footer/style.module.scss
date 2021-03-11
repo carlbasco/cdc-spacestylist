@@ -44,9 +44,17 @@
 .contacts {
   padding-bottom: 1em;
   li {
+    
     font-family: font(montserrat);
     i {
       margin-right: 1em;
+    }
+    a{
+      font-weight: 300;
+      color:#fff;
+      &:hover{
+        text-decoration: underline;
+      }
     }
   }
 }
@@ -144,6 +152,9 @@
   }
   a {
     color: color(primary-light);
+    &:hover{
+      text-decoration: underline;
+    }
   }
 
   @include lg {

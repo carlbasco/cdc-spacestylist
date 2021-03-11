@@ -21,11 +21,13 @@ const Footer = () => {
                 </li>
                 <li>
                   <i className="fa fa-phone"></i>
-                  0920 972 7828 / 0918 488 7225 / 0966 447 0435
+                  <a href="tel:+63 920 972 7828">0920 972 7828 </a> /&nbsp;
+                  <a href="tel:+63 918 488 7225">0918 488 7225 </a> /&nbsp;
+                  <a href="tel:+63 966 447 0435">0966 447 0435 </a>
                 </li>
                 <li>
                   <i className="fa fa-envelope"></i>
-                  cdcdesignco2020@gmail.com
+                  <a href="mailto:cdcdesignco2020@gmail.com">cdcdesignco2020@gmail.com</a>
                 </li>
               </ul>
               <div className={styles.socialDiv}>
@@ -68,7 +70,7 @@ const Footer = () => {
         </div>
         <div className={styles.footerBottom}>
           <p>
-            Copyright &copy; 2021 &nbsp;<a href="/"> CDC Space Stylist. </a>
+            Copyright &copy; 2021 &nbsp;<a href="/"> CDC Space Stylist </a>
             &nbsp;All rights reserved
           </p>
         </div>

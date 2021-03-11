@@ -40,7 +40,6 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
         onClick={() => scrollTop()}
       >
         <i className="fa fa-arrow-up" aria-hidden="true"></i>
-        &nbsp; Go to Top
       </button>
       <Footer />
     </>
