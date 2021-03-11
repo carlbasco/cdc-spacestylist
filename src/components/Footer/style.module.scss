@@ -1,0 +1,161 @@
+@use '../../scss/utilities';
+@import '../../scss/responsive';
+@import '../../scss/theme';
+
+.footer {
+  padding: 1.5em 0 0;
+}
+
+.footerBody {
+  color: #fff;
+  background-color: color(primary-dark);
+}
+
+.main {
+  @include utilities.container;
+  @include utilities.grid;
+  padding-top: 2em;
+  padding-bottom: 2em;
+
+  & > *:first-child {
+    text-align: center;
+    h4 {
+      font-family: font(gruppo);
+      text-transform: uppercase;
+      font-size: 1.8em;
+    }
+    h5 {
+      font-family: font(gruppo);
+      font-size: 1.5em;
+      line-height: 0.5px;
+    }
+  }
+
+  @include lg {
+    grid-template-columns: 1fr;
+    gap: 2em;
+  }
+}
+
+.logo {
+  width: 100px;
+}
+
+.contacts {
+  padding-bottom: 1em;
+  li {
+    font-family: font(montserrat);
+    i {
+      margin-right: 1em;
+    }
+  }
+}
+
+.socialDiv {
+  p {
+    font-family: font(montserrat);
+  }
+}
+
+.socialNav {
+  a {
+    overflow: hidden;
+    font-size: 20px;
+    border-radius: 4px;
+    margin-right: 5px;
+    margin-left: 5px;
+    float: left;
+    width: 36px;
+    height: 36px;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    line-height: 36px;
+    position: relative;
+    &:hover {
+      background: #fff;
+      text-shadow: 0 0 #d4d4d4, 1px 1px #d4d4d4, 2px 2px #d4d4d4,
+        3px 3px #d4d4d4, 4px 4px #d4d4d4, 5px 5px #d4d4d4, 6px 6px #d4d4d4,
+        7px 7px #d4d4d4, 8px 8px #d4d4d4, 9px 9px #d4d4d4, 10px 10px #d4d4d4,
+        11px 11px #d4d4d4, 12px 12px #d4d4d4, 13px 13px #d4d4d4,
+        14px 14px #d4d4d4, 15px 15px #d4d4d4, 16px 16px #d4d4d4,
+        17px 17px #d4d4d4, 18px 18px #d4d4d4, 19px 19px #d4d4d4,
+        20px 20px #d4d4d4, 21px 21px #d4d4d4, 22px 22px #d4d4d4,
+        23px 23px #d4d4d4, 24px 24px #d4d4d4, 25px 25px #d4d4d4,
+        26px 26px #d4d4d4, 27px 27px #d4d4d4, 28px 28px #d4d4d4,
+        29px 29px #d4d4d4, 30px 30px #d4d4d4;
+    }
+  }
+}
+
+.facebook {
+  background: #3b579d;
+  text-shadow: 0 0 #2d4278, 1px 1px #2d4278, 2px 2px #2d4278, 3px 3px #2d4278,
+    4px 4px #2d4278, 5px 5px #2d4278, 6px 6px #2d4278, 7px 7px #2d4278,
+    8px 8px #2d4278, 9px 9px #2d4278, 10px 10px #2d4278, 11px 11px #2d4278,
+    12px 12px #2d4278, 13px 13px #2d4278, 14px 14px #2d4278, 15px 15px #2d4278,
+    16px 16px #2d4278, 17px 17px #2d4278, 18px 18px #2d4278, 19px 19px #2d4278,
+    20px 20px #2d4278, 21px 21px #2d4278, 22px 22px #2d4278, 23px 23px #2d4278,
+    24px 24px #2d4278, 25px 25px #2d4278, 26px 26px #2d4278, 27px 27px #2d4278,
+    28px 28px #2d4278, 29px 29px #2d4278, 30px 30px #2d4278;
+  &:hover {
+    color: #3b579d;
+  }
+}
+
+.twitter {
+  background: #00aced;
+  text-shadow: 0 0 #0087ba, 1px 1px #0087ba, 2px 2px #0087ba, 3px 3px #0087ba,
+    4px 4px #0087ba, 5px 5px #0087ba, 6px 6px #0087ba, 7px 7px #0087ba,
+    8px 8px #0087ba, 9px 9px #0087ba, 10px 10px #0087ba, 11px 11px #0087ba,
+    12px 12px #0087ba, 13px 13px #0087ba, 14px 14px #0087ba, 15px 15px #0087ba,
+    16px 16px #0087ba, 17px 17px #0087ba, 18px 18px #0087ba, 19px 19px #0087ba,
+    20px 20px #0087ba, 21px 21px #0087ba, 22px 22px #0087ba, 23px 23px #0087ba,
+    24px 24px #0087ba, 25px 25px #0087ba, 26px 26px #0087ba, 27px 27px #0087ba,
+    28px 28px #0087ba, 29px 29px #0087ba, 30px 30px #0087ba;
+  &:hover {
+    color: #00aced;
+  }
+}
+
+.instagram {
+  background: #870f69;
+  text-shadow: 0 0 #700857, 1px 1px #700857, 2px 2px #700857, 3px 3px #700857,
+    4px 4px #700857, 5px 5px #700857, 6px 6px #700857, 7px 7px #700857,
+    8px 8px #700857, 9px 9px #700857, 10px 10px #700857, 11px 11px #700857,
+    12px 12px #700857, 13px 13px #700857, 14px 14px #700857, 15px 15px #700857,
+    16px 16px #700857, 17px 17px #700857, 18px 18px #700857, 19px 19px #700857,
+    20px 20px #700857, 21px 21px #700857, 22px 22px #700857, 23px 23px #700857,
+    24px 24px #700857, 25px 25px #700857, 26px 26px #700857, 27px 27px #700857,
+    28px 28px #700857, 29px 29px #700857, 30px 30px #700857;
+  &:hover {
+    color: #cb2026;
+  }
+}
+
+.footerBottom {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 1em 50px;
+
+  p {
+    margin-left: 6em;
+  }
+  a {
+    color: color(primary-light);
+  }
+
+  @include lg {
+    // padding: 1em 50px;
+    p {
+      margin-left: 0;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  }
+  @include sm {
+    padding: 1em 0;
+  }
+}

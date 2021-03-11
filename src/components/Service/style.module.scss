@@ -1,0 +1,82 @@
+@use '../../scss/utilities';
+@import '../../scss/responsive';
+@import '../../scss/theme';
+
+.main {
+  background-color: #dcdcdc;
+}
+.container {
+  @include utilities.container
+}
+
+.spanTitle {
+  @include utilities.spanTitle;
+  color: rgba($color: #fff, $alpha: 0.3);
+  font-size: 8em;
+
+  @include xl {
+    font-size: 6em;
+  }
+  @include lg {
+    font-size: 4em;
+  }
+  @include sm {
+    display: none;
+  }
+}
+
+.sectionTitle {
+  @include utilities.sectionTitle;
+  margin-top: -4em;
+  h2 {
+    color: color(primary);
+  }
+  @include xl {
+    margin-top: -3.3em;
+  }
+  @include lg {
+    margin-top: -2.5em;
+  }
+  @include sm {
+    margin-top: 0em;
+  }
+  @include mobile-md {
+    h2 {
+      line-height: 1;
+    }
+  }
+}
+
+.grid {
+  @include utilities.grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding-top: 2em;
+  padding-bottom: 3em;
+  gap: 2em;
+  overflow: hidden;
+  ul {
+    text-align: center;
+    font-size: 1.7em;
+    color: color(primary-light);
+    li {
+      line-height: 1;
+      padding-bottom: 1.5em;
+    }
+  }
+  @include lg {
+    grid-template-columns: 1fr;
+  }
+  @include md {
+    ul {
+      li {
+        padding-bottom: 0.5em;
+      }
+    }
+  }
+
+  @include sm {
+    ul {
+      font-size: 1.5em;
+    }
+  }
+}

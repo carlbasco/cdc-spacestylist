@@ -1,0 +1,54 @@
+@import './theme.scss';
+
+.btn {
+  font-family: sans-serif;
+  display: inline-block;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+@mixin primary {
+  @extend .btn;
+  color: #fff;
+  background-color: color(primary);
+  border: 1.5px solid color(primary);
+  &:hover{
+    background-color: color(primary-light);
+  }
+  &:active{
+    background-color: color(primary-dark);
+    transform: scale(.9);
+  }
+}
+
+@mixin outlinePrimary{
+  @extend .btn;
+  color:color(primary);
+  background-color: #fff;
+  border: 1.5px solid color(primary);
+  &:hover{
+    color: #fff;
+    background-color: color(primary);
+  }
+  &:active{
+    color: #fff;
+    background-color: color(primary-dark);
+    transform: scale(.9);
+  }
+}
+
+@mixin secondary{
+  @extend .btn;
+  color: #000;
+  font-weight: bold;
+  background-color: color(secondary);
+  border: 1.5px solid color(secondary);
+  &:hover{
+    background-color: color(secondary-light);
+  }
+  &:active{
+    background-color: color(secondary-dark);
+    transform: scale(.9);
+  }
+}

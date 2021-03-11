@@ -1,0 +1,92 @@
+@use '../../scss/utilities';
+@import '../../scss/responsive';
+@import '../../scss/theme';
+
+.main {
+  @include utilities.container;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.spanTitle {
+  @include utilities.spanTitle;
+  text-align: right;
+  font-size: 8em;
+  @include xl {
+    font-size: 7em;
+  }
+  @include lg {
+    font-size: 6em;
+    text-align: center;
+  }
+  @include md {
+    font-size: 5em;
+  }
+  @include sm {
+    display: none;
+  }
+}
+
+.sectionTitle {
+  @include utilities.sectionTitle;
+  margin-top: -3.8em;
+  @include xl {
+    margin-top: -3.5em;
+  }
+  @include lg {
+    margin-top: -3.4em;
+  }
+  @include md {
+    margin-top: -3em;
+  }
+  @include sm {
+    margin-top: 0em;
+  }
+}
+
+.flex {
+  @include utilities.flex;
+  padding-bottom: 2em;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  @include xl {
+    justify-content: center;
+  }
+}
+
+.card {
+  @include utilities.card;
+  width: 300px;
+  padding: 0;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  &:hover {
+    cursor: pointer;
+  }
+
+  img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.cardBody {
+  padding: 1.25em;
+}
+
+.name {
+  color: color(primary);
+  font-family: font(gruppo);
+  text-align: center;
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
+.position {
+  text-align: center;
+  font-size: 1em;
+}

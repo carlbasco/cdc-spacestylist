@@ -1,0 +1,114 @@
+@use '../../scss/utilities';
+@use '../../scss/button';
+@import '../../scss/responsive';
+@import '../../scss/theme';
+
+.hero {
+  height: 800px;
+  background: url('/images/cdc-background3.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  margin-top: 5em;
+  padding-top: 3em;
+
+  svg {
+    width: 100%;
+    height: 325px;
+  }
+  h1 {
+    color: color(primary-light);
+    font-size: 3.5em;
+    font-weight: bolder;
+    line-height: 1;
+    padding-bottom: 3px;
+
+    @include lg {
+      font-size: 2.8em;
+    }
+    @include sm {
+      font-size: 2.5em;
+    }
+  }
+  p {
+    color: color(primary);
+    font-family: font(rubik);
+    font-size: 20px;
+    @include sm {
+      font-size: 18px;
+    }
+  }
+
+  @include md {
+    background-position: 10%;
+    background-image: url('/images/cdc-background2.webp');
+  }
+
+  @include sm {
+    background-position: 15%;
+  }
+}
+
+.dream {
+  transform: translate(0px, 258px);
+  fill: rgba(78, 80, 15, 0.05);
+  font-size: 267px;
+  font-weight: 700;
+
+  @include xl {
+    font-size: 220px;
+  }
+  @include lg {
+    font-size: 180px;
+  }
+  @include sm {
+    font-size: 120px;
+  }
+}
+
+.main {
+  @include utilities.container;
+  @include utilities.grid;
+  margin-top: -340px;
+  grid-template-columns: repeat(2, 1fr);
+
+  @include md {
+    grid-template-columns: 1fr;
+    & > *::first-child {
+      grid-column: 1;
+    }
+    p {
+      background-color: #dadada9e;
+    }
+  }
+}
+
+.heroText {
+  margin-top: -4.5em;
+}
+
+.h2 {
+  padding-left: 3em;
+  padding-bottom: 1em;
+
+  @include xl {
+    padding-left: 2em;
+  }
+  @include lg {
+    padding-left: 1.5em;
+  }
+  @include mobile-sm {
+    padding-left: 1em;
+  }
+}
+
+.btnProject{
+  @include button.secondary;
+  margin-right: 1em;
+  margin-top: 1em;
+}
+
+.btnFooter{
+  @include button.outlinePrimary;
+  margin-top: 1em;
+}

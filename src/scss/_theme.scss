@@ -1,0 +1,36 @@
+$colors: (
+  primary: #4e500f,
+  primary-light: lighten(#4e500f, 7%),
+  primary-dark: darken(#4e500f, 6%),
+  secondary: #d8b133,
+  secondary-light: lighten(#d8b133, 10%),
+  secondary-dark: darken(#d8b133, 6%),
+  dark: #002240,
+  light: #f4f4f4,
+  success: #5cb85c,
+  error: #d9534f,
+);
+
+@function color($color-name) {
+  @return map-get($colors, $color-name);
+}
+
+$fonts: (
+  gruppo: (
+    'Gruppo',
+    cursive,
+  ),
+  montserrat: (
+    'Montserrat',
+    sans-serif,
+  ),
+  rubik: (
+    'Rubik',
+    sans-serif,
+  ),
+);
+
+@function font($font-family) {
+  @return map-get($map: $fonts, $key: $font-family);
+}
+

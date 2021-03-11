@@ -1,0 +1,40 @@
+@use '../../scss/utilities';
+@import '../../scss/responsive';
+@import '../../scss/theme';
+
+.grid {
+  @include utilities.grid;
+  grid-template-columns: 1fr;
+  align-items: flex-start;
+  p {
+    text-align: justify;
+  }
+}
+
+.profileSection {
+  padding-top: 1em;
+  text-align: center;
+  h5 {
+    font-family: font(gruppo);
+    font-size: 1.5em;
+  }
+  h6 {
+    font-size: 1em;
+  }
+}
+
+.profileImg {
+  border-radius: 25px;
+  width: 230px;
+  height: 230px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+}
+
+.profileBio {
+  p.pt-2 {
+    font-weight: bold;
+  }
+  ul {
+    list-style-type: disc;
+  }
+}

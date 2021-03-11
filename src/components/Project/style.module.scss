@@ -1,0 +1,150 @@
+@use '../../scss/utilities';
+@import '../../scss/responsive';
+@import '../../scss/theme';
+
+.container {
+  @include utilities.container;
+}
+
+.spanTitle {
+  @include utilities.spanTitle;
+  font-size: 8em;
+  @include lg {
+    font-size: 5em;
+  }
+  @include sm {
+    display: none;
+  }
+}
+
+.sectionTitle {
+  @include utilities.sectionTitle;
+  h2 {
+    margin-top: 0.5em;
+  }
+  @include lg {
+    margin-top: -3.6em;
+  }
+  @include sm {
+    margin-top: 0em;
+  }
+}
+
+.cardProj {
+  margin: 4em 6em;
+  background-color: #d8b133d1;
+  color: #000;
+  display: flex;
+  padding: 1.5em;
+  border-radius: 25px;
+  gap: 1.5em;
+  &>*{
+    width: 50%;
+  }
+  @include lg{
+    flex-direction: column;
+    &>*{
+      width: unset;
+    }
+  }
+  @include md{
+    margin: 2em 0;
+  }
+}
+
+
+.projectContent {
+  text-align: center;
+  margin-bottom: 2em;
+  & > :first-child{
+    text-decoration: underline;
+    font-weight: bold;
+    text-align: center;
+    font-family: font(gruppo);
+    font-size: 2em;
+    line-height: 1em;
+  }
+  &:not(:first-child){
+    // line-height: 0em;
+    font-weight: 400;
+    text-align: center;
+    font-family: font(montserrat);
+    margin-bottom: 2em;
+  }
+}
+
+.projectDetails {
+  margin-top: .5em;
+  text-align: center;
+  & > :first-child {
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+  &:not(:first-child) {
+    font-size: 1em;
+  }
+}
+
+.dataContent {
+  margin-bottom: 2em;
+  text-align: center;
+  h3 {
+    line-height: 1em;
+    color: color(primary);
+    font-size: 3em;
+    font-family: font(gruppo);
+    padding-bottom: 0.2em;
+  }
+  p {
+    line-height: 0.5em;
+    font-size: 1.5em;
+  }
+}
+
+.flex {
+  @include utilities.flex;
+  margin-bottom: 1.5em;
+  flex-wrap: wrap;
+}
+
+.cardImgProj {
+  display: inherit;
+  margin: 1em;
+  border-radius: 15px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.imgProj {
+  border-radius: 15px;
+}
+
+.spanClose {
+  position: absolute;
+  padding-top: 5px;
+  padding-right: 10px;
+  right: 0;
+  top: 0;
+  font-size: 4em;
+  color: white;
+  line-height: 0.7em;
+  cursor: pointer;
+}
+
+.zoomImg {
+  z-index: 100;
+  border-radius: 15px;
+  height: 75%;
+  @include sm {
+    height: unset;
+    width: 90%;
+  }
+  @media only screen and(max-width:768px) and (min-height:1024px) {
+    height: unset;
+    width: 90%;
+  }
+  @media only screen and(max-width:1024px) and (min-height:1366px) {
+    height: unset;
+    width: 80%;
+  }
+}

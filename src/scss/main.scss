@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Gruppo&family=Montserrat:wght@100;200;300;400;500;600;700&family=Rubik&display=swap');
+@import 'button';
+@import 'utilities';
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+ul {
+  list-style-type: none;
+}
+p,
+ul,
+li,
+a {
+  font-family: 'Rubik', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+section {
+  padding: 7em 0 3em;
+}
+
+.scrollTop {
+  position: fixed;
+  top: 50%;
+  right: -110px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: color(primary-light);
+  color: white;
+  cursor: pointer;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  font-size: 18px;
+  padding: 8px 1.5em 8px 1em;
+  transition: right 0.5s ease-in-out;
+  &:hover {
+    right: -20px;
+    transition: right 0.5s ease-in-out;
+  }
+}
+
+.hide-scrollTop {
+  @extend .scrollTop;
+  display: none;
+}
+
+@media (hover: none) {
+  .scrollTop:hover {
+    right: -110px;
+  }
+}

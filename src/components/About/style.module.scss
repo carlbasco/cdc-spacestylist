@@ -1,0 +1,90 @@
+@use '../../scss/utilities';
+@import '../../scss/responsive';
+@import '../../scss/theme';
+
+
+.container {
+  @include utilities.container;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.spanTitle {
+  @include utilities.spanTitle;
+  text-align: left;
+
+  @include lg {
+    font-size: 8em;
+    text-align: center;
+  }
+  @include md {
+    font-size: 6em;
+  }
+  @include sm {
+    display: none;
+  }
+}
+
+.sectionTitle {
+  @include utilities.sectionTitle;
+  h2 {
+    text-align: left;
+  }
+
+  @include lg {
+    margin-top: -3.8em;
+    h2 {
+      text-align: center;
+    }
+  }
+  @include md {
+    margin-top: -3.4em;
+  }
+  @include sm {
+    margin-top: 0em;
+  }
+}
+
+.flex {
+  @include utilities.flex;
+  margin-top: -4em;
+  @include lg {
+    margin-top: -1em;
+  }
+}
+
+.aboutText {
+  z-index: 2;
+  background-color: #d8b133d1;
+  border-radius: 20px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+
+  p {
+    color: #000;
+    text-align: justify;
+    font-weight: 300;
+    font-size: 1.25em;
+
+    @include xl {
+      font-size: 1em;
+    }
+  }
+}
+
+.aboutImg {
+  width: 600px;
+  z-index: 1;
+  margin-left: -15em;
+
+  @include xl {
+    width: 60%;
+    margin-left: -17em;
+  }
+  @include lg {
+    display: none;
+  }
+}
