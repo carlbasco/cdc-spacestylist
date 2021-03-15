@@ -151,8 +151,8 @@ const Project = () => {
                           className={styles.imgProj}
                           src={item3}
                           alt="img"
-                          width={280}
-                          height={280}
+                          width="280"
+                          height="280"
                         />
                       </motion.div>
                     ))}

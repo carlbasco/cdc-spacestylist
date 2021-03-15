@@ -1,6 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Gruppo&family=Montserrat:wght@100;200;300;400;500;600;700&family=Rubik&display=swap');
 @import 'button';
 @import 'utilities';
+@import 'font-awesome/css/font-awesome.min.css';
+
+@font-face {
+  font-family: 'FontAwesome';
+  font-style: normal;
+  font-weight: 400;
+  src: local('font-awesome/fonts/fontawesome-webfont.woff2') format('woff2');
+  font-display: swap;
+}
 
 * {
   box-sizing: border-box;
@@ -63,3 +72,4 @@ section {
     right: -110px;
   }
 }
+

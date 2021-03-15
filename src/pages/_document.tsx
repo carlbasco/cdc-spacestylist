@@ -34,6 +34,8 @@ class MyDocument extends Document {
           `,
             }}
           />
+          <link rel="preload" as="image" href="images/cdc-background3.webp" />
+          <link rel="preload" as="image" href="images/cdc-background2.webp" />
         </Head>
 
         <body>

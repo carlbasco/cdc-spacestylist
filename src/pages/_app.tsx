@@ -3,7 +3,6 @@ import type { AppProps } from 'next/app'
 import { useRouter } from 'next/router'
 import { Footer, Navbar } from '../components'
 import * as gtag from '../lib/gtag'
-import 'font-awesome/css/font-awesome.min.css'
 import '../scss/main.scss'
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
@@ -22,7 +21,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
 
   const router = useRouter()
   useEffect(() => {
-    const handleRouteChange = (url) => {
+    const handleRouteChange = (url: any) => {
       gtag.pageview(url)
     }
     router.events.on('routeChangeComplete', handleRouteChange)

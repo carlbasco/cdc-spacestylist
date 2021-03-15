@@ -79,6 +79,8 @@ const About = () => {
               initial="hidden"
               animate={controls}
               alt="img"
+              width="600"
+              height="450"
             />
           </div>
         </div>

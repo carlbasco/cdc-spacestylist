@@ -21,7 +21,7 @@ const Navbar = () => {
       <div className={styles.main}>
         <Link href="/">
           <a className={styles.navbarBrand}>
-            <img src={logo} alt="cdc-logo" />
+            <img src={logo} alt="cdc" width="40" height="33" />
             CDC Space Stylist
           </a>
         </Link>
