@@ -85,7 +85,7 @@ export const aboutData = [
   {
     image: therese,
     name: 'Therese Colonia',
-    position: 'Interior Design',
+    position: 'Space Stylist',
     bio: `My journey started in a Furniture Company 
     where I worked for a couple of years. That was
     my very first job as a graduate of Bachelor of 
