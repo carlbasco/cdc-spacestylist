@@ -70,6 +70,17 @@ const mb8 = '/images/projects/moodboards/8.png'
 const mb9 = '/images/projects/moodboards/9.png'
 const mb10 = '/images/projects/moodboards/10.png'
 
+const sjdma1 = '/images/projects/sjdm/a1.jpg'
+const sjdma2 = '/images/projects/sjdm/a2.jpg'
+const sjdma3 = '/images/projects/sjdm/a3.jpg'
+const sjdma4 = '/images/projects/sjdm/a4.jpg'
+const sjdma5 = '/images/projects/sjdm/a5.jpg'
+const sjdma6 = '/images/projects/sjdm/a6.jpg'
+const sjdmb1 = '/images/projects/sjdm/b1.jpg'
+const sjdmb2 = '/images/projects/sjdm/b2.jpg'
+const sjdmc1 = '/images/projects/sjdm/c1.jpg'
+const sjdmc2 = '/images/projects/sjdm/c2.jpg'
+
 export const aboutData = [
   {
     image: therese,
@@ -180,6 +191,16 @@ export const projectData = [
           avida10,
           avida6,
           avida7,
+          sjdma1,
+          sjdma2,
+          sjdma3,
+          sjdma4,
+          sjdma5,
+          sjdma6,
+          sjdmc1,
+          sjdmc2,
+          sjdmb1,
+          sjdmb2,
         ],
       },
     ],
@@ -193,7 +214,7 @@ export const projectData = [
       },
       {
         title: 'After',
-        images: [bath1, bath2, bath3, bath4,  bath6, bath5],
+        images: [bath1, bath2, bath3, bath4, bath6, bath5],
       },
       {
         title: 'Before',
